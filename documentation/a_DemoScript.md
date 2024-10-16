@@ -187,3 +187,72 @@ export class CdkHelloWorldStack extends cdk.Stack {
 
 ---------
 
+#### 4. Prepare your application for deployment
+
+1. Run the following command to build the `npm project`
+
+```s
+npm run build
+```
+<p align="center">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/36e5c5a8-1cc7-423e-ab49-572d89008d19">
+</p>
+
+2. Verify that you know where you are going to deploy your resources too. Take a peek at your config file 
+
+<p align="center">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/2798d60e-d253-4791-a3e2-ca01bb221c99">
+</p>
+
+
+3. Run cdk synth to synthesize an AWS CloudFormation template from your CDK code. By using L2 constructs, many of the configuration details required by AWS CloudFormation to facilitate the interaction between your Lambda function and REST API are provisioned for you by the AWS CDK.
+
+```s
+cdk synth
+```
+
+<p align="center">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/aef65cce-3b59-4d7b-b68a-25baa931fd03">
+</p>
+
+> NOTE: If successful, you will see an AWS CloudFormation template being constructed and displayed via the Terminal. 
+
+---------
+
+#### 5. Deploy your application 
+
+1. From the root of your project, run the following. Confirm changes if prompted:
+
+```s
+cdk bootstrap
+```
+
+<p align="center">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/871ab1bb-425f-4065-bad9-7edec69d60a7">
+</p>
+
+
+
+
+> ERRORS: If you attempt to run `cdk deploy` prior to running `cdk bootstrap` you will get an error. If you run `cdk bootstrap` after you have previously run the command in this account, you will also get an error. What is happeing is when you run `cdk bootstrap` AWS is attempting to set up some resources that CloudFormation will need to execute your CDK project -- specifically it creates an S3 bucket that it needs to store various config items. This S3 bucket is most commonly the error you receive when running `cdk bootstrap` for first or second time. If you haven't run it once you'll get an error that says you need an S3 bucket. If you have run it before, you'll get an error saying you already have an S3 bucket. Just disposition the error accordingly. 
+
+<p align="center">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/3834daba-8283-4334-89d5-d03bede683b6">
+</p>
+
+<p align="center">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/1a56948d-2385-4ae0-821a-816f4e71d5d4">
+</p> 
+
+</p align="center">
+<img width="1270" alt="image" src="https://github.com/user-attachments/assets/8f0c1786-b9be-4129-abbe-d01499392535">
+</p>
+
+2. Now you can deploy your stack 
+
+```s
+cdk deploy
+```
+
+2. When deployment completes, the AWS CDK CLI will output your endpoint URL. Copy this URL for the next step. The following is an example:
+
