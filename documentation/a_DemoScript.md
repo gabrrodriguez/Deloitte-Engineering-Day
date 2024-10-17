@@ -242,7 +242,7 @@ cdk bootstrap
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/1a56948d-2385-4ae0-821a-816f4e71d5d4">
 </p> 
 
-</p align="center">
+<p align="center">
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/8f0c1786-b9be-4129-abbe-d01499392535">
 </p>
 
