@@ -254,3 +254,10 @@ cdk deploy
 
 2. When deployment completes, the AWS CDK CLI will output your endpoint URL. Copy this URL for the next step. The following is an example:
 
+</p align="center">
+<img width="1289" alt="image" src="https://github.com/user-attachments/assets/0416d9a8-7cbc-40ae-959d-6809ade1e3d9">
+</p>
+
+</p align="center">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/9bc11815-32bc-4169-8278-30e2cacab28a">
+</p>
