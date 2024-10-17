@@ -122,7 +122,7 @@ export class CdkHelloWorldStack extends cdk.Stack {
 
 ---------
 
-#### 3. Define your API Gateway Construct
+#### 4. Define your API Gateway Construct
 
 1. Return to your `lib/hello-world-stack.ts` file. You will modify this file to define an additional construct - an 1. API Gateway resource & 2. your API Gateway route to our `helloWorldFunction`. Add the following to the file: 
 
@@ -187,7 +187,7 @@ export class CdkHelloWorldStack extends cdk.Stack {
 
 ---------
 
-#### 4. Prepare your application for deployment
+#### 5. Prepare your application for deployment
 
 1. Run the following command to build the `npm project`
 
@@ -219,7 +219,7 @@ cdk synth
 
 ---------
 
-#### 5. Deploy your application 
+#### 6. Deploy your application 
 
 1. From the root of your project, run the following. Confirm changes if prompted:
 
