@@ -232,8 +232,6 @@ cdk bootstrap
 </p>
 
 
-
-
 > ERRORS: If you attempt to run `cdk deploy` prior to running `cdk bootstrap` you will get an error. If you run `cdk bootstrap` after you have previously run the command in this account, you will also get an error. What is happeing is when you run `cdk bootstrap` AWS is attempting to set up some resources that CloudFormation will need to execute your CDK project -- specifically it creates an S3 bucket that it needs to store various config items. This S3 bucket is most commonly the error you receive when running `cdk bootstrap` for first or second time. If you haven't run it once you'll get an error that says you need an S3 bucket. If you have run it before, you'll get an error saying you already have an S3 bucket. Just disposition the error accordingly. 
 
 <p align="center">
@@ -245,7 +243,7 @@ cdk bootstrap
 </p> 
 
 </p align="center">
-<img width="1270" alt="image" src="https://github.com/user-attachments/assets/8f0c1786-b9be-4129-abbe-d01499392535">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/8f0c1786-b9be-4129-abbe-d01499392535">
 </p>
 
 2. Now you can deploy your stack 

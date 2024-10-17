@@ -26,3 +26,4 @@ export class CdkHelloWorldStack extends cdk.Stack {
     helloResource.addMethod('GET');Construct
   }
 }
+
